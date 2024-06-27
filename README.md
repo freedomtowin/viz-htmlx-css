@@ -33,7 +33,7 @@ The code was modified to load in a blog post template website with css. I used t
 Note that this examples uses `handlebars`, a [template engine](https://viz.rs/en/0.4.x/extra-topics/templates) for formatting HTML.
 
 
-Suprisingly, I didn't have to pass the data into the `handlebars` render function. The `Router` the GET call seems to automatically add the static files path to the .htmls files, i.e., 
+Surprisingly, I didn't have to pass the data into the `handlebars` render function. The `Router` the GET call seems to automatically add the static files path to the .html files, i.e., 
 
 ```
     let app = Router::new()
@@ -54,7 +54,7 @@ To start the web server, you will need to run the following cargo command. Notic
 
 ### Fetch data
 
-You can interact with you API/Web App through curl or by opening a brower.
+You can interact with you API/Web App through curl or by opening a browser.
 
 `curl http://127.0.0.1:3000`
 
@@ -62,4 +62,4 @@ You can interact with you API/Web App through curl or by opening a brower.
 
 The compile time was very very fast for a Rust application. I noticed that using other template engines like `tera` made the compile time significantly slower though. Overall I'm happy with the package and give it a 7/10 due to lack of example documentation. 
 
-I plan on creating a pull request to add this example to library. I also plan on deploying this full-stack blog website relatively soon too!
+I might create a pull request to add this example to the library's GitHub repo. I also might end up deploying a full-stack blog website soon too!
